@@ -1,0 +1,7 @@
+## dualstack
+ELB(Application or Clasic)へのルーティングでエイリアスレコードとすると対象の一覧に
+出てくるELB名にはdualstackが自動的に付与される。これによりipv4, v6問わずよしなにやってくれる
+
+## エイリアスレコード
+CNAMEではなくAレコードにてAWS内のELBなどのリソースにルーティングできる。
+CNAMEよりDNSクエリ回数が少ないためパフォーマンスが良い
